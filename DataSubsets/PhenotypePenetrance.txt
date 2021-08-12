@@ -1,0 +1,13 @@
+Penetrance.Gene.Control	Penetrance.Total	round.Penetrance.ScLobesFreq..2.	round.Penetrance.CollarFreq..2.	round.Penetrance.PronotumFreq..2.	round.Penetrance.PronPlJunctionFreq..2.	round.Penetrance.ForewingsFreq..2.	round.Penetrance.HindwingsFreq..2.	round.Penetrance.WingsFreq..2.	round.Penetrance.ScutellumFreq..2.	round.Penetrance.PleuralMarginsFreq..2.	round.Penetrance.WingHingesFreq..2.
+1	ap	86	0.12	0.23	0.73	0.47	0.8	0.62	0.8	0.81	0.63	0.69
+2	control	319	0.01	0.02	0.03	0.01	0.03	0.04	0.06	0.04	0.02	0.02
+3	hth	76	0.71	0.67	0.76	0.75	0.29	0.47	0.51	0.82	0.74	0.53
+4	iro	54	0.24	0.11	0.31	0.02	0.06	NA	0.06	0.31	0.04	NA
+5	mir	37	0.19	0.27	0.95	0.7	0.59	0.65	0.7	0.92	0.97	0.68
+6	nub	51	0.9	0.22	0.57	0.29	0.92	0.84	0.92	0.39	0.88	0.65
+7	srf	52	0.88	0.88	0.94	0.9	0.92	0.73	0.92	0.94	0.92	0.83
+8	tio	50	0.82	0.9	0.86	0.76	0.58	0.56	0.62	0.94	0.84	0.8
+9	tup	59	0.02	0.31	0.53	0.17	0.17	0.12	0.22	0.86	0.15	0.02
+10	ush	46	NA	0.17	0.59	0.24	0.22	0.15	0.22	0.48	0.46	0.2
+11	vg	48	0.04	0.06	0.96	0.6	0.62	0.81	0.81	0.98	0.88	0.92
+12	zfp	5	1	0.4	0.8	0.8	NA	0.8	0.8	NA	0.6	0.4
