@@ -1,4 +1,4 @@
-Penetrance.Gene.Control	Penetrance.Total	round.Penetrance.ScLobesFreq..2.	round.Penetrance.CollarFreq..2.	round.Penetrance.PronotumFreq..2.	round.Penetrance.PronPlJunctionFreq..2.	round.Penetrance.ForewingsFreq..2.	round.Penetrance.HindwingsFreq..2.	round.Penetrance.WingsFreq..2.	round.Penetrance.ScutellumFreq..2.	round.Penetrance.PleuralMarginsFreq..2.	round.Penetrance.WingHingesFreq..2.
+Gene.or.Control	Total	Penetrance.ScLobes	Penetrance.Collar	Penetrance.Pronotum	Penetrance.PronPlJunction	Penetrance.Forewings	Penetrance.Hindwings	Penetrance.Wings	Penetrance.Scutellum	Penetrance.PleuralMargins	Penetrance.WingHinges
 1	ap	86	0.12	0.23	0.73	0.47	0.8	0.62	0.8	0.81	0.63	0.69
 2	control	319	0.01	0.02	0.03	0.01	0.03	0.04	0.06	0.04	0.02	0.02
 3	hth	76	0.71	0.67	0.76	0.75	0.29	0.47	0.51	0.82	0.74	0.53

@@ -1,4 +1,4 @@
-FreqTable.Gene.Control	FreqTable.Total	FreqTable.ScLobes	round.FreqTable.ScLobesFreq..2.	FreqTable.Collar	round.FreqTable.CollarFreq..2.	FreqTable.Pronotum	round.FreqTable.PronotumFreq..2.	FreqTable.PronPlJunction	round.FreqTable.PronPlJunctionFreq..2.	FreqTable.Forewings	round.FreqTable.ForewingsFreq..2.	FreqTable.Hindwings	round.FreqTable.HindwingsFreq..2.	FreqTable.Wings	round.FreqTable.WingsFreq..2.	FreqTable.Scutellum	round.FreqTable.ScutellumFreq..2.	FreqTable.WingHinges	round.FreqTable.WingHingesFreq..2.	FreqTable.PleuralMargins	round.FreqTable.PleuralMarginsFreq..2.
+Gene.or.Control	Total	ScLobes	ScLobes.Freq	Collar	Collar.Freq	Pronotum	Pronotum.Freq	PronPlJunction	PronPlJunction.Freq	Forewings	Forewings.Freq	Hindwings	Hindwings.Freq	Wings.either	Wings.either.Freq	Scutellum	Scutellum.Freq	Wing.Hinges	Wing.Hinges.Freq	Pleural.Margins	Pleural.Margins.Freq
 1	ap	86	10	0.12	20	0.23	63	0.73	40	0.47	69	0.8	53	0.62	69	0.8	70	0.81	59	0.69	54	0.63
 2	control	319	3	0.01	6	0.02	11	0.03	3	0.01	9	0.03	14	0.04	18	0.06	14	0.04	7	0.02	7	0.02
 3	hth	76	54	0.71	51	0.67	58	0.76	57	0.75	22	0.29	36	0.47	39	0.51	62	0.82	40	0.53	56	0.74

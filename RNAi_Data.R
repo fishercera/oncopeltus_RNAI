@@ -2,9 +2,11 @@
 require(dplyr)
 require(tidyr)
 ##### Set wd to where you are keeping the datatables
+setwd("C:/Users/cruth/Documents/ONCOPELTUSTEMP/DATA/")
+#setwd("C:/Users/cruth/Google Drive/Treehoppers/MediaPosterPresentation/PublicationDraftFolder/OncopeltusRNAi_Manuscript/datatables/")
 #####
 options(stringsAsFactors = FALSE)
-df <- read.csv("RawScoringData.txt", header=TRUE, sep="\t")
+df <- read.csv("CombinedTable_ForR_CRF.txt", header=TRUE, sep="\t")
 dim(df)
 colnames(df)
 str(df)
@@ -20,7 +22,7 @@ df.inf <- arrange(df, How.Informative) %>%
   select(Experiment, DPI, Individual, Gene.Control, Stage.Scored, How.Informative) %>%
   filter(How.Informative < 5)
 
-### 169 specimens have less than or equal to 5 informative fiels
+### 169 specimens have less than or equal to 5 informative fields
 
 count(df.inf, Gene.Control)
 
@@ -412,9 +414,34 @@ write.table(df.sclobes, "SupracoxalLobesPhenotypes.txt", sep="\t", quote=FALSE)
 write.table(df.scutellum, "ScutellumPhenotypes.txt", sep="\t", quote=FALSE)
 write.table(df.winghinges, "WinghingesPhenotypes.txt", sep="\t", quote=FALSE)
 write.table(df.wings, "WingsPhenotypes.txt", sep="\t", quote=FALSE)
+
+colnames(FreqTable_2) <- c(
+  "Gene.or.Control", 
+  "Total", 
+  "ScLobes", 
+  "ScLobes.Freq", 
+  "Collar", 
+  "Collar.Freq", 
+  "Pronotum", 
+  "Pronotum.Freq", 
+  "PronPlJunction", 
+  "PronPlJunction.Freq", 
+  "Forewings", 
+  "Forewings.Freq", 
+  "Hindwings", 
+  "Hindwings.Freq", 
+  "Wings.either", 
+  "Wings.either.Freq",
+  "Scutellum", 
+  "Scutellum.Freq", 
+  "Wing.Hinges", 
+  "Wing.Hinges.Freq", 
+  "Pleural.Margins", 
+  "Pleural.Margins.Freq"
+)
 write.table(FreqTable_2, "PhenotypeFrequencies.txt", sep="\t", quote=FALSE)
 
-save.image(file="RNAi_Data.RData")
+
 
 
 Penetrance <- select(FreqTable, Gene.Control, Total, ScLobesFreq, CollarFreq, 
@@ -432,4 +459,27 @@ Penetrance <- data.frame(Penetrance$Gene.Control, Penetrance$Total,
                          round(Penetrance$ScutellumFreq, 2), 
                          round(Penetrance$PleuralMarginsFreq, 2),
                          round(Penetrance$WingHingesFreq, 2))
+
+colnames(Penetrance) <- c(
+  "Gene.or.Control", 
+  "Total", 
+  "Penetrance.ScLobes", 
+  "Penetrance.Collar", 
+  "Penetrance.Pronotum", 
+  "Penetrance.PronPlJunction", 
+  "Penetrance.Forewings", 
+  "Penetrance.Hindwings", 
+  "Penetrance.Wings", 
+  "Penetrance.Scutellum", 
+  "Penetrance.PleuralMargins", 
+  "Penetrance.WingHinges"
+)
 write.table(Penetrance, file="PhenotypePenetrance.txt", quote=FALSE, sep="\t")
+
+###############################################################################
+# Save RData workspace 
+save.image(file="../RNAi_Data.RData")
+###############################################################################
+# Save session info
+
+writeLines(capture.output(sessionInfo()), "../sessionInfo.txt")
